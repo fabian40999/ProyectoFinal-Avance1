@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <center>
+    <h1>Formulario</h1>
+    <form class="declara" id="contact_form" action="#">
+        
+
+    <ul>
+        <li>
+            <span class="required notification">Agregue sus datos</span>
+        </li>
+
+        <li>
+            <label for="rfc">RFC</label>
+            <input type="text" name="rfc" pattern="[A-Za-z].{10,}" placeholder="10 A 13 CARACTERES" maxlength="13" required/>
+        </li>
+
+        <li>
+            <label for="periodo">Mes</label>
+            <select name="periodo" required>
+                <option value="">Opci&oacute;n</option>
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+        </li>
+
+        <li>
+            <label for="fecha">¿Qu&eacute; d&iacute;a es hoy?</label>
+            <input type="date" name="fecha"  min="2022-10-25" max="2100-12-31" value="?php echo ('Y-M-D');?>" maxlength="10">
+        </li>
+
+        <li>
+            <label for="telefono">N&uacute;mero telef&oacute;nico</label>
+            <input name="phone" pattern="[0-9].{10,}" maxlength="10" required>
+        </li>
+
+        <li>
+            <label for="comida">Comida</label>
+            <select name="comida" required>
+                <option value="">Opci&oacute;n</option>
+                <option value="pizza">Pizza</option>
+                <option value="carneasada">Carne Asada</option>
+                <option value="hamburguesa">Hamburguesa</option>
+                <option value="higadoencebollado">Higado Encebollado</option>
+                <option value="burritos">Burrito de Frijoles</option>
+
+            </select>
+        
+        </li>
+
+        <li>
+            <label for="videojuego">¿Qu&eacute; prefieres?</label>
+            <select name="videojuego" required>
+                <option value="">Opci&oacute;n</option>
+                <option value="god">God of War Ragnarok</option>
+                <option value="smash">Super Smash Bros. Brawl</option>
+                <option value="spiderman2">Marvel's Spider-Man 2</option>
+                <option value="sekiro">Sekiro: Shadows Die Twice</option>
+                <option value="gta">GTA San Andreas</option>
+
+            </select>
+        
+        </li>
+
+        <li>
+            <button class="submit" type="submit">Enviar</button>
+        </li>
+    </ul>
+    </center>
+    </form>
+</body>
+</html>
